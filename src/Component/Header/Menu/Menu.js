@@ -1,22 +1,27 @@
 import React from 'react';
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import './Menu.css'
+
+
+
+
 const Menu = () => {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar className='navbar' expand="lg">
             <Container>
-                <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">Link</Nav.Link>
-                        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                        </NavDropdown>
+                        <Link to='/home' className='menu-item'>Home</Link>
+                        <Link to='/courses' className='menu-item'>Courses</Link>
+                        <Link to='/admission' className='menu-item'>Admission</Link>
+                        <Link to='/services' className='menu-item'>Services</Link>
+                        <Link to='/facilities' className='menu-item'>Facilities</Link>
+                        <Link to='/reviews' className='menu-item'>Reviews</Link>
+                        <Link to='/about-us' className='menu-item'>About us</Link>
+                        <Link to='/contact' className='menu-item'>Contact</Link>
+                        <Link to='/gallery' className='menu-item'>Gallery</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

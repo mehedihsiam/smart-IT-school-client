@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Facalities = () => {
+const Gallery = () => {
     return (
         <div>
-
+            Gallary
         </div>
     );
 };
 
-export default Facalities;
+export default Gallery;
