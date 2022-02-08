@@ -1,13 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap');
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
+/* Common CSS */
 .color-a{
   color: #0071BB;
 }
@@ -15,26 +9,47 @@
   color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* This menu is used in Navbar and footer */
+/* -------------------------------------- */
+.menu-item{
+ color: rgb(255 255 255);
+ text-decoration: none;
+ margin: auto 5px;
+ display: inline-block;
+ position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.menu-item:hover{
+    color: rgb(255 255 255);
 }
 
-.App-link {
-  color: #61dafb;
+.menu-item:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255 255 255);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
 }
+
+.menu-item:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* -------------------------------------- */
+
+
+/* List style */
+.list-styles-none li{
+    list-style: none;
+}
+
+
 
 
 

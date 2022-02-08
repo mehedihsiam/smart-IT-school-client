@@ -9,11 +9,11 @@ import './FooterContact.css'
 const FooterContact = () => {
     return (
         <Container className='my-3'>
-            <div className='color-white contact-header'>
+            <h2 className='color-white text-center'>
                 Contacts
-            </div>
-            <Row>
-                <Col sm={12} className='my-2 d-flex align-items-center'>
+            </h2>
+            <ul className='list-styles-none'>
+                <li>
                     <Row className='d-flext align-items-center'>
                         <Col sm={2}>
                             <div className='footer-icons color-white'>
@@ -21,13 +21,13 @@ const FooterContact = () => {
                             </div>
                         </Col>
                         <Col sm={10}>
-                            <address className='color-white'>
+                            <address className='color-white mx-2'>
                                 Chowrongi Super Market, Shop No: 4,5,6,7,8 (4th Floor) Savar bustand , savar, Dhaka-1340.
                             </address>
                         </Col>
                     </Row>
-                </Col>
-                <Col sm={12} className='my-2 d-flex align-items-center'>
+                </li>
+                <li>
                     <Row className='d-flext align-items-center'>
                         <Col sm={2}>
                             <div className='footer-icons color-white'>
@@ -37,17 +37,13 @@ const FooterContact = () => {
                         <Col sm={10}>
                             <div className='mx-3'>
                                 <p className='color-white'>
-                                    +880 1688667870
-                                </p>
-                                <p className='color-white'>
-                                    +880 1747099119
+                                    +880 1688667870 <br /> +880 1747099119
                                 </p>
                             </div>
                         </Col>
                     </Row>
-
-                </Col>
-                <Col sm={12} className='my-2 d-flex align-items-center'>
+                </li>
+                <li>
                     <Row className='d-flext align-items-center'>
                         <Col sm={2}>
                             <div className='footer-icons color-white'>
@@ -62,9 +58,21 @@ const FooterContact = () => {
                             </div>
                         </Col>
                     </Row>
+                </li>
+            </ul>
+            {/* <Row>
+                <Col sm={12} className='my-2 d-flex align-items-center'>
+                    
+                </Col>
+                <Col sm={12} className='my-2 d-flex align-items-center'>
+                    
 
                 </Col>
-            </Row>
+                <Col sm={12} className='my-2 d-flex align-items-center'>
+                    
+
+                </Col>
+            </Row> */}
         </Container>
     );
 };
