@@ -1,0 +1,17 @@
+.footer-icons{
+    font-size: 1.5rem;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.contact-header{
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+}

@@ -5,7 +5,7 @@
     transition: all 0.5s;
 }
 
-.social-icons:hover, .phone-icon:hover{
+.social-icons:hover{
     color: #32527F;
 }
 
