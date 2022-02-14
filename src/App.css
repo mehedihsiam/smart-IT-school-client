@@ -12,7 +12,6 @@
 /* This menu is used in Navbar and footer */
 /* -------------------------------------- */
 .menu-item{
- color: rgb(255 255 255);
  text-decoration: none;
  margin: auto 5px;
  display: inline-block;
@@ -47,6 +46,42 @@
 /* List style */
 .list-styles-none li{
     list-style: none;
+}
+
+
+/* Buttons styles */
+.btn-a{
+  background-color: #0071BB;
+  color: white;
+  transition: all 0.5s;
+}
+
+.btn-a:hover{
+  background-color: #028de9;
+  color: white;
+}
+
+
+.text-justify{
+  text-align: justify;
+}
+
+
+.link{
+  color: #0071BB;
+  text-decoration: none;
+}
+
+
+/* Font size */
+.font-size-a{
+  font-size: 1.1rem;
+}
+
+
+/* List style */
+.list-style-a li{ 
+  list-style:disc;
 }
 
 

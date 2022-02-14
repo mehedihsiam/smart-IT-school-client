@@ -1,9 +1,9 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons'
-import { faFacebookSquare, faTwitterSquare } from "@fortawesome/free-brands-svg-icons"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 import './TopBarInfo.css'
+import { Link } from 'react-router-dom';
 
 const TopBarInfo = () => {
     return (
@@ -18,12 +18,11 @@ const TopBarInfo = () => {
                     </p>
                 </Col>
                 <Col md={6} sm={6} xs={12}>
-                    <a className='social-icons' rel='noreferrer' target='_blank' href="https://www.facebook.com/SmartItSchool.com.bd">
-                        <FontAwesomeIcon icon={faFacebookSquare} />
-                    </a>
-                    <a className='social-icons' rel='noreferrer' target='_blank' href="https://www.facebook.com/SmartItSchool.com.bd">
-                        <FontAwesomeIcon icon={faTwitterSquare} />
-                    </a>
+                    <div className='text-end'>
+                        <Link to='/login' className='btn-a btn'>
+                            Login
+                        </Link>
+                    </div>
                 </Col>
             </Row>
         </div>
